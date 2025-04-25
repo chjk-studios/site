@@ -18,11 +18,6 @@
                 <audio id="chickenSound" src="chicken-jockey.mp3"></audio>
             </div>
         </div>
-        <div class="credit">
-            <a href="https://joplay.xyz" target="_blank" rel="noopener noreferrer" class="credit-link">
-              Made by joplay.xyz
-            </a>
-        </div>
     </main>
     <script>
         const jockenImage = document.getElementById('jockenImage');
@@ -34,47 +29,5 @@
             chickenSound.play();
         });
     </script>
-    <style>
-@font-face {
-    font-family: 'Inter';
-    src: url('https://joplay.xyz/fonts/inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
-    font-weight: 100 900; 
-    font-style: normal;
-}
-        
-.credit {
-  position: relative;  
-  bottom: auto;       
-  left: 0;
-  width: 100%;
-  text-align: center;
-  z-index: 2;        
-  margin-bottom: 1rem; 
-  pointer-events: none;
-}
-
-.credit-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: rgba(0, 255, 157, 0.2);
-  border-radius: 2rem;
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  font-size: 0.9rem;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-  pointer-events: auto;
-}
-
-.credit-link:hover {
-  background: rgba(0, 255, 157, 0.2);
-  border-color: var(--primary-color);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 255, 157, 0.2);
-}
-
-    </style>
 </body>
 </html>
