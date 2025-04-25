@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Created By Joplay.xyz</title>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading-text">
+            Created By Joplay.xyz
+        </div>
+    </div>
+    <script>
+     setTimeout(() => {
+      window.location.href = 'https://joplay.xyz';
+     }, 1500);
+    </script>
+    <style>
+      @font-face {
+    font-family: 'Inter';
+    src: url('https://joplay.xyz/fonts/inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d1b2a;
+    color: #fff;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.loading-container {
+    text-align: center;
+    animation: fadeInOut 1.5s ease-in-out forwards;
+}
+
+.loading-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #00ff9d;
+    animation: scaleUp 1.5s ease-in-out forwards;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+    </style>
+</body>
+</html>
