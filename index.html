@@ -14,17 +14,17 @@
     <main>
         <div class="grid">
             <div class="chickenjockey">
-                <img src="Jocken.png" class="chickenjockey-image" id="jockenImage">
+                <img src="Jocken.png" class="chickenjockey-image" id="chickenjockeyImage" style="height: 300px; width: 300px; ">
                 <audio id="chickenSound" src="chicken-jockey.mp3"></audio>
             </div>
         </div>
     </main>
     <script>
-        const jockenImage = document.getElementById('jockenImage');
+        const jockenImage = document.getElementById('chickenjockeyjockeyImage');
         const chickenSound = document.getElementById('chickenSound');
       
         // chicken jockey
-        jockenImage.addEventListener('click', () => {
+        chickenjockeyjockeyImage.addEventListener('click', () => {
             chickenSound.currentTime = 0;
             chickenSound.play();
         });
