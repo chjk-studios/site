@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="grid">
-            <div class="chickenjockey">
+            <div class="chickenjockey" id="linkinbio">
                 <h1><a href="https://chickenjockey.dev/bio">Link in bio maker!</a></h1>
          </div>
     </main>
@@ -32,6 +32,7 @@
         const chickenSound = document.getElementById('chickenSound');
         const chickenjockeyImage2 = document.getElementById('chickenjockeyImage2');
         const chickenSound2 = document.getElementById('chickenSound2');
+        const linkinbio = document.getElementById('linkinbio');
       
         // chicken jockey
         chickenjockeyImage.addEventListener('click', () => {
@@ -41,6 +42,9 @@
         chickenjockeyImage2.addEventListener('click', () => {
             chickenSound2.currentTime = 0;
             chickenSound2.play();
+        });
+        linkinbio.addEventListener('click', () => {
+            window.open('/bio', '_blank');
         });
     </script>
     <script src="credit.js"></script>
