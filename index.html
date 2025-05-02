@@ -17,6 +17,10 @@
                 <img src="Jocken.png" class="chickenjockey-image" id="chickenjockeyImage" style="height: 300px; width: 300px; ">
                 <audio id="chickenSound" src="chicken-jockey.mp3"></audio>
             </div>
+            <div class="chickenjockey">
+                <img src="jockey.png" class="chickenjockey-image" id="chickenjockeyImage2" style="height: 300px; width: 300px; ">
+                <audio id="chickenSound2" src="chicken-jockey.mp3"></audio>
+            </div>
         </div>
         <div class="grid">
             <div class="chickenjockey">
@@ -26,11 +30,17 @@
     <script>
         const chickenjockeyImage = document.getElementById('chickenjockeyImage');
         const chickenSound = document.getElementById('chickenSound');
+        const chickenjockeyImage = document.getElementById('chickenjockeyImage2');
+        const chickenSound = document.getElementById('chickenSound2');
       
         // chicken jockey
         chickenjockeyImage.addEventListener('click', () => {
             chickenSound.currentTime = 0;
             chickenSound.play();
+        });
+        chickenjockeyImage2.addEventListener('click', () => {
+            chickenSound2.currentTime = 0;
+            chickenSound2.play();
         });
     </script>
     <script src="credit.js"></script>
