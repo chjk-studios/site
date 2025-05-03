@@ -23,7 +23,7 @@
       margin-bottom: 1rem;
     }
     textarea {
-      width: 100%;
+      width: 80%;
       height: 200px;
       background: #1b263b;
       color: #e0e1dd;
@@ -70,16 +70,16 @@
 
 <h1>Link in bio maker!</h1>
 
+<textarea id="name" placeholder="Enter your site name here..." style="width: 80%; height: 30px;">
+
+</textarea>
 <textarea id="markdown" placeholder="Paste your markdown here..."># Hello  
-This is a sample bio page. You can add links, lists, and even code blocks (bugged)!
+This is a sample bio page. You can add links, lists)!
 
 ## Links
 - [Link1](https://chickenjockey.dev/bio)
 - [Link2](https://chickenjockey.dev/bio)
 
-\`\`\`js
-console.log("This is a code block???");
-\`\`\`
 </textarea>
 
 <br />
@@ -96,6 +96,7 @@ console.log("This is a code block???");
 <script>
 function convert() {
   const md = document.getElementById("markdown").value;
+  const siteName = document.getElementById("name").value;
   const htmlContent = marked.parse(md);
   const fullHtml = `
 <!DOCTYPE html>
@@ -103,7 +104,7 @@ function convert() {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Markdown Page</title>
+<title>${siteName}</title>
 <style>
   :root {
     --bg: #0d1b2a;
@@ -168,6 +169,7 @@ ${htmlContent}
 
 function downloadHtml() {
   const md = document.getElementById("markdown").value;
+  const siteName = document.getElementById("name").value;
   const htmlContent = marked.parse(md);
   const fullHtml = `
 <!DOCTYPE html>
@@ -175,7 +177,7 @@ function downloadHtml() {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Markdown Page</title>
+<title>${siteName}</title>
 <style>
   :root {
     --bg: #0d1b2a;
@@ -232,11 +234,12 @@ ${htmlContent}
 </html>`;
 
   const blob = new Blob([fullHtml], { type: 'text/html' });
+  const siteName = document.getElementById("name").value;
   const url = URL.createObjectURL(blob);
 
   const a = document.createElement("a");
   a.href = url;
-  a.download = "bio.html";
+  a.download = "${siteName}-chickenjockey-dev-bio.html";
   a.click();
 }
 </script>
