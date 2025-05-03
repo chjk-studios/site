@@ -1,5 +1,4 @@
-console.log('[DEBUG] loaded animation.js!')
-function showTextAnimation(text = ' ') {
+function showTextAnimation(text = '') {
     const style = document.createElement('style');
     style.textContent = `
         .animation-background-container {
