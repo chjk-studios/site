@@ -1,4 +1,4 @@
-function showTextAnimation(text = '(no text set)', redirectUrl = null) {
+function showTextAnimation(text = ' ') {
     const style = document.createElement('style');
     style.textContent = `
         .animation-background-container {
@@ -53,8 +53,5 @@ function showTextAnimation(text = '(no text set)', redirectUrl = null) {
     setTimeout(() => {
             container.remove();
             style.remove();
-            if (redirectUrl) {
-                window.location.href = redirectUrl;
-            }
         }, 1500);
     }
