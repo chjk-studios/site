@@ -232,6 +232,7 @@ ${htmlContent}
 </html>`;
 
   const blob = new Blob([fullHtml], { type: 'text/html' });
+  const siteName = document.getElementById("name").value;
   const url = URL.createObjectURL(blob);
 
   const a = document.createElement("a");
