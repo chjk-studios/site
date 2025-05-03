@@ -44,8 +44,10 @@
             chickenSound2.play();
         });
         linkinbio.addEventListener('click', () => {
-            window.open('/bio', '_blank');
-            showTextAnimation(' ')
+            showLoadingAnimation(' ');
+            setTimeout(() => {
+                window.open('/bio', '_blank');
+            }, 1500);
         });
     </script>
     <script src="credit.js"></script>
