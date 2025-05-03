@@ -168,7 +168,6 @@ ${htmlContent}
 
 function downloadHtml() {
   const md = document.getElementById("markdown").value;
-  const siteName = document.getElementById("name").value;
   const htmlContent = marked.parse(md);
   const fullHtml = `
 <!DOCTYPE html>
@@ -233,7 +232,6 @@ ${htmlContent}
 </html>`;
 
   const blob = new Blob([fullHtml], { type: 'text/html' });
-  const siteName = document.getElementById("name").value;
   const url = URL.createObjectURL(blob);
 
   const a = document.createElement("a");
