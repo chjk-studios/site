@@ -1,10 +1,6 @@
 (function() {
     const style = document.createElement('style');
     style.textContent = `
-        body {
-            opacity: 0;
-        }
-        
         @font-face {
             font-family: 'Inter';
             src: url('https://joplay.xyz/fonts/inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
