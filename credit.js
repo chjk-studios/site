@@ -34,7 +34,7 @@
         @keyframes load-scaleUp {
             0% {
                 transform: scale(0.8);
-                opacity: 0;
+                opacity: 1;
             }
             20% {
                 transform: scale(1);
@@ -52,9 +52,6 @@
 
         @keyframes load-fadeInOut {
             0% {
-                opacity: 0;
-            }
-            20% {
                 opacity: 1;
             }
             80% {
