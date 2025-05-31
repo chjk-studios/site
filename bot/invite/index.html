@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChickenJockey.dev</title>
+    <link rel="stylesheet" href="/bot/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+</head>
+<body>
+    <main>
+        <div class="grid">
+            <div class="gridbox" id="invite-btn">
+                <h1>Invite bot!</h1>
+            </div>
+        </div>
+        <h3><a href="/bot"><-- Back</a></h3>
+    </main>
+    <style>
+      h1, h2, h3, a, p {
+        color: #00ff9d;
+        font-family: monospace;
+        margin-bottom: 1rem;
+      }
+      body {
+        text-align: center;
+        }
+    </style>
+    <script>
+    const invitebtn = document.getElementById('invite-btn');
+    invitebtn.addEventListener('click', () => {
+        window.location.href = 'https://discord.com/oauth2/authorize?client_id=1370038458932002826&permissions=8&integration_type=0&scope=bot';
+    });
+    </script>
+</body>
+</html>
