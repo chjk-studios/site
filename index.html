@@ -1,63 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChickenJockey.dev</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChickenJockey Studio</title>
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #ffffff;
+    }
+  </style>
 </head>
 <body>
-    <main>
-        <div class="grid">
-            <div class="chickenjockey">
-                <img src="Jocken.png" class="chickenjockey-image" id="chickenjockeyImage" style="height: 300px; width: 300px; ">
-                <audio id="chickenSound" src="chicken-jockey.mp3"></audio>
-            </div>
-            <div class="chickenjockey">
-                <img src="jockey.png" class="chickenjockey-image" id="chickenjockeyImage2" style="height: 300px; width: 300px; ">
-                <audio id="chickenSound2" src="chicken-jockey.mp3"></audio>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="chickenjockey" id="linkinbio">
-                <h1><a>Link in bio maker!</a></h1>
-         </div>
-    </main>
-    <script src="animation.js"></script>
-    <script>
-        const chickenjockeyImage = document.getElementById('chickenjockeyImage');
-        const chickenSound = document.getElementById('chickenSound');
-        const chickenjockeyImage2 = document.getElementById('chickenjockeyImage2');
-        const chickenSound2 = document.getElementById('chickenSound2');
-        const linkinbio = document.getElementById('linkinbio');
-      
-        // chicken jockey
-        chickenjockeyImage.addEventListener('click', () => {
-            chickenSound.currentTime = 0;
-            chickenSound.play();
-        });
-        chickenjockeyImage2.addEventListener('click', () => {
-            chickenSound2.currentTime = 0;
-            chickenSound2.play();
-        });
-        linkinbio.addEventListener('click', () => {
-            showTextAnimation(' ');
-            setTimeout(() => {
-                window.location.href = '/bio';
-            }, 1500);
-        });
-    </script>
-    <script src="credit.js"></script>
-    <style>
-      h1, a {
-        color: #00ff9d;
-        font-family: monospace;
-        margin-bottom: 1rem;
-      }
-    </style>
+
+  <nav class="nav">
+    <div class="nav-logo">
+      <img src="/images/logo.png" class="logo-nav">
+      <span class="logo-text"><a href="#" style="cursor: url('/cursors/pixel-black/hand.cur'), auto;">Chickenjockey</a></span>
+    </div>
+    <div class="nav-menu">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#links" class="nav-link">Links</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+
+
+  <div class="main-part">
+    <div class="title">
+        <h1>Chickenjockey Studio</h1>
+        <p style="margin-top: 10px;">a brand new game / development studio</p>
+
+        <button style="margin-top: 20px;" onclick="window.open('https://discord.gg/qvtarcdK2w', '_blank')">Join OUR DISCORD</button>
+    </div>
+  </div>
+
+
+
+  <div class="projects-part" id="projects">
+    <h1>Projects</h1>
+    <br>
+    <div class="card">
+      <h2>Link in Bio Maker</h2>
+      <br>
+      <p>Create your own Website</p>
+      <p>using this tool</p>
+      <button style="margin-top: 20px;" onclick="window.open('https://github.com/chickenjockey-dev/LinkInBio', '_blank')">Github</button>
+      <button style="margin-top: 20px;" onclick="window.open('/bio', '_blank')">Try it out</button>
+    </div>
+    <div class="card" style="margin-top: 20px; padding-right: 120px;">
+      <h2>Discord bot</h2>
+      <br>
+      <p>Useful Discord bot</p>
+      <p>(in development)</p>
+      <button style="margin-top: 20px;" onclick="window.open('/bot')">Invite Bot</button>
+    </div> 
+  </div>
+
+
+
+  <div class="links-part" id="links">
+    <h1>Links</h1>
+    <button style="margin-top: 20px;" onclick="window.open('https://github.com/chickenjockey-dev/', '_blank')">Github</button>
+  </div>
+  <div class="contact-part" id="contact">
+    <h1>Contact</h1>
+    <br>
+    <button style="margin-top: 20px;">Contact@ChickenJockey.dev</button>
+    <button style="margin-top: 20px;" onclick="window.open('https://discord.gg/qvtarcdK2w', '_blank')">DISCORD</button>
+  </div>
+
+
+
+  <div class="footer">
+    <p>&copy; 2025 Chickenjockey Studio.</p>
+    <div class="footer-links">
+      <p><a href="https://github.com/chickenjockey-dev/">Github</a></p>
+      <p><a href="https://discord.gg/qvtarcdK2w">Discord</a></p>
+      <p><a href="/meme">🤫</a></p>
+    </div>
+  </div>
+
+
+
+  <div id="cursorMenu">
+    <label style="color: black;">Super secret cursor menu</label>
+    <br>
+    <label for="cursorSelect" style="color: black;">Select Cursor Style:</label>
+    <select id="cursorSelect"></select>
+    <p style="margin:5px 0 0 0; font-size: 0.8em; color: gray;">Press <b>0</b> to toggle this menu</p>
+    <p style="margin:5px 0 0 0; font-size: 0.8em; color: gray;"><a href="/cursors/info.txt" style="color:blue;">info.txt</a></p>
+  </div>
+  <script src="cursors.js"></script>
 </body>
 </html>
