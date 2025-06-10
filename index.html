@@ -3,7 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ChickenJockey Studio</title>
+  <title>ChickenJockey Studio - Home</title>
+  <meta property="description" content="Chickenjockey Studio - a brand new game / website / minecraft server development studio." />
+  <meta name="keywords" content="Chickenjockey, Chicken jockey, web development, dev studio, minecraft server" />
+  <meta name="author" content="Chickenjockey Studio - By Joplay.xyz" />
+
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="ChickenJockey Studio - Home" />
+  <meta property="og:description" content="Chickenjockey Studio - a brand new game / website / minecraft server development studio." />
+  <meta property="og:image" content="/images/og-image.png" />
+  <meta property="og:url" content="https://chickenjockey.dev" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Chickenjockey Studio" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ChickenJockey Studio - Home" />
+  <meta name="twitter:description" content="Chickenjockey Studio - a brand new game / website / minecraft server development studio." />
+  <meta name="twitter:image" content="/images/twitter-image.png" />
+  <meta name="twitter:site" content="@CHJK_Studio" />
+  <meta name="twitter:creator" content="@JoplayXYZ" />
+
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -17,7 +38,7 @@
   </style>
 </head>
 <body>
-
+  
   <nav class="nav">
     <div class="nav-logo">
       <img src="/images/logo.png" class="logo-nav">
@@ -32,13 +53,13 @@
   </nav>
 
 
-
   <div class="main-part">
+    <div class="glow-thing"></div>
     <div class="title">
-        <h1>Chickenjockey Studio</h1>
-        <p style="margin-top: 10px;">a brand new game / development studio</p>
+      <h1>Chickenjockey Studio</h1>
+      <p style="margin-top: 10px;">a brand new game / website / minecraft server development studio</p>
 
-        <button style="margin-top: 20px;" onclick="window.open('https://discord.gg/qvtarcdK2w', '_blank')">Join OUR DISCORD</button>
+      <button style="margin-top: 20px;" onclick="window.open('https://discord.gg/qvtarcdK2w', '_blank')">Join OUR DISCORD</button>
     </div>
   </div>
 
@@ -69,7 +90,11 @@
   <div class="links-part" id="links">
     <h1>Links</h1>
     <button style="margin-top: 20px;" onclick="window.open('https://github.com/chickenjockey-dev/', '_blank')">Github</button>
+    <button style="margin-top: 20px;" onclick="window.open('https://tiktok.com/@chickenjockey.dev/', '_blank')">Tiktok</button>
   </div>
+
+
+
   <div class="contact-part" id="contact">
     <h1>Contact</h1>
     <br>
@@ -84,7 +109,7 @@
     <div class="footer-links">
       <p><a href="https://github.com/chickenjockey-dev/">Github</a></p>
       <p><a href="https://discord.gg/qvtarcdK2w">Discord</a></p>
-      <p><a href="/meme">🤫</a></p>
+      <p><a onclick="playSound2()">🤫</a></p>
     </div>
   </div>
 
@@ -98,6 +123,8 @@
     <p style="margin:5px 0 0 0; font-size: 0.8em; color: gray;">Press <b>0</b> to toggle this menu</p>
     <p style="margin:5px 0 0 0; font-size: 0.8em; color: gray;"><a href="/cursors/info.txt" style="color:blue;">info.txt</a></p>
   </div>
+  <audio id="sound2" src="/meme/chicken-jockey.mp3"></audio>
   <script src="cursors.js"></script>
+  <script src="sound.js"></script>
 </body>
 </html>
