@@ -28,7 +28,6 @@
   </div>
 
   <script>
-    // TODO: Replace with your Firebase config
     const firebaseConfig = {
         apiKey: "AIzaSyDXz5Kdf72C1Ks-xSauqd5Q1cKZTuBoy-U",
         authDomain: "chickenjockey-studio.firebaseapp.com",
@@ -38,13 +37,11 @@
         appId: "1:1012362162434:web:6f9ce36d04abcc33fa521b"
     };
 
-    // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
 
     const postsList = document.getElementById("postsList");
 
-    // Fetch posts
     db.collection("posts").get().then(snapshot => {
       snapshot.forEach(doc => {
         const post = doc.data();
