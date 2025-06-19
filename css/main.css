@@ -1,9 +1,17 @@
 :root {
   --main-bg: #0a0a0a;
-  --main-text: #ffffff;
+  --main-text: #ECF0F1;
   --logo-bg: #2ECC71;
   --accent-primary: #2ECC71;
   --accent-secondary: #3498db;
+  --color-green: #2ECC71;
+  --color-red: #E74C3C;
+  --color-blue: #3498DB;
+  --color-orange: #F39C12;
+  --color-yellow: #F1C40F;
+  --color-gray: #95A5A6;
+  --color-dark-gray: #2C3E50;
+  --color-white: #ECF0F1;
   --logo-text: #17202a;
   --gradient-primary: linear-gradient(135deg, #2ECC71, #8ee7b3);
 }
