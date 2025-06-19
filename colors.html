@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ChickenJockey Studio - Home</title>
+  <title>ChickenJockey Studio - Colors</title>
   <!-- Meta Tags -->
   <meta property="description" content="Chickenjockey Studio - a brand new game / website / minecraft server development studio." />
   <meta name="keywords" content="Chickenjockey, Chicken jockey, web development, dev studio, minecraft server" />
@@ -11,7 +11,7 @@
 
 
   <!-- OpenGraph -->
-  <meta property="og:title" content="ChickenJockey Studio - Home" />
+  <meta property="og:title" content="ChickenJockey Studio - Colors" />
   <meta property="og:description" content="Chickenjockey Studio - a brand new game / website / minecraft server development studio." />
   <meta property="og:image" content="/images/og-image.png" />
   <meta property="og:url" content="https://chickenjockey.dev" />
@@ -20,7 +20,7 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ChickenJockey Studio - Home" />
+  <meta name="twitter:title" content="ChickenJockey Studio - Colors" />
   <meta name="twitter:description" content="Chickenjockey Studio - a brand new game / website / minecraft server development studio." />
   <meta name="twitter:image" content="/images/twitter-image.png" />
   <meta name="twitter:site" content="@CHJK_Studio" />
@@ -39,6 +39,32 @@
       background: #0a0a0a;
       color: #ffffff;
     }
+    .palette {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-bottom: 100px;
+    }
+    .color-box {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .swatch {
+      height: 100px;
+    }
+    .info {
+      padding: 0.5rem;
+      background: #000000;
+      font-size: 0.9rem;
+    }
+    .hex {
+      font-family: monospace;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -53,18 +79,6 @@
 
     <div class="nav-menu">
       <a href="#" class="nav-link">Home</a>
-      <a href="#members" class="nav-link">Members</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </div>
-    <div class="nav-menu" style="margin-top: 10px;">
-      <!-- Dropdown Trigger -->
-      <div class="nav-dropdown">
-        <button class="nav-link dropdown-toggle">☰ ▾</button>
-        <div class="dropdown-menu">
-          <a href="/posts/" class="dropdown-item">Posts</a>
-          <a href="#links" class="dropdown-item">Links</a>
-        </div>
-      </div>
     </div>
   </nav>
 
@@ -72,74 +86,63 @@
   <div class="main-part">
     <div class="glow-thing"></div>
     <div class="title">
-      <h1>Chickenjockey Studio</h1>
-      <p style="margin-top: 10px;">a brand new game / website / minecraft server development studio</p>
-
-      <button style="margin-top: 20px;" onclick="window.open('https://discord.gg/qvtarcdK2w', '_blank')">Join OUR DISCORD</button>
+      <h1>Colors</h1>
+      <p style="margin-top: 10px;">Our Studios color palette</p>
+      <button onclick="window.location.href = 'colors.html#palette'">|<br>\/
+      </button>
     </div>
   </div>
 
-
-
-  <div class="members-part" id="members">
-    <h1>Members</h1>
-    <br>
-    <div class="card">
-      <h2>Joplayxyz</h2>
-      <br>
-      <p>Founder - Developer</p>
-      <p></p>
-      <button style="margin-top: 20px;" onclick="window.open('https://joplay.xyz/', '_blank')">Website</button>
+  <div class="palette" id="palette">
+    <div class="color-box">
+      <div class="swatch" style="background-color: #2ECC71;"></div>
+      <div class="info">
+        Green<br><span class="hex">#2ECC71</span>
+      </div>
     </div>
-    <div class="card" style="margin-top: 20px;">
-      <h2>Become a Member</h2>
-      <br>
-      <p></p>
-      <p></p>
-      <button style="margin-top: 20px;" onclick="window.open('https://discord.gg/qvtarcdK2w')">Join!</button>
-    </div> 
-  </div>
-
-
-
-  <div class="projects-part" id="projects">
-    <h1>Projects</h1>
-    <br>
-    <div class="card">
-      <h2>Link in Bio Maker</h2>
-      <br>
-      <p>Create your own Website</p>
-      <p>using this tool</p>
-      <button style="margin-top: 20px;" onclick="window.open('https://github.com/chickenjockey-dev/LinkInBio', '_blank')">Github</button>
-      <button style="margin-top: 20px;" onclick="window.open('/bio', '_blank')">Try it out</button>
+    <div class="color-box">
+      <div class="swatch" style="background-color: #E74C3C;"></div>
+      <div class="info">
+        Red<br><span class="hex">#E74C3C</span>
+      </div>
     </div>
-    <div class="card" style="margin-top: 20px; padding-right: 120px;">
-      <h2>Discord bot</h2>
-      <br>
-      <p>Useful Discord bot</p>
-      <p>(in development)</p>
-      <button style="margin-top: 20px;" onclick="window.open('/bot')">Invite Bot</button>
-    </div> 
+    <div class="color-box">
+      <div class="swatch" style="background-color: #3498DB;"></div>
+      <div class="info">
+        Blue<br><span class="hex">#3498DB</span>
+      </div>
+    </div>
+    <div class="color-box">
+      <div class="swatch" style="background-color: #F39C12;"></div>
+      <div class="info">
+        Orange<br><span class="hex">#F39C12</span>
+      </div>
+    </div>
+    <div class="color-box">
+      <div class="swatch" style="background-color: #F1C40F;"></div>
+      <div class="info">
+        Yellow<br><span class="hex">#F1C40F</span>
+      </div>
+    </div>
+    <div class="color-box">
+      <div class="swatch" style="background-color: #95A5A6;"></div>
+      <div class="info">
+        Gray<br><span class="hex">#95A5A6</span>
+      </div>
+    </div>
+    <div class="color-box">
+      <div class="swatch" style="background-color: #2C3E50;"></div>
+      <div class="info">
+        Dark Gray<br><span class="hex">#2C3E50</span>
+      </div>
+    </div>
+    <div class="color-box">
+      <div class="swatch" style="background-color: #ECF0F1;"></div>
+      <div class="info">
+        White<br><span class="hex">#ECF0F1</span>
+      </div>
+    </div>
   </div>
-
-
-
-  <div class="links-part" id="links">
-    <h1>Links</h1>
-    <button style="margin-top: 20px;" onclick="window.open('https://github.com/chickenjockey-dev/', '_blank')">Github</button>
-    <button style="margin-top: 20px;" onclick="window.open('https://tiktok.com/@chickenjockey.dev/', '_blank')">Tiktok</button>
-  </div>
-
-
-
-  <div class="contact-part" id="contact">
-    <h1>Contact</h1>
-    <br>
-    <button style="margin-top: 20px;">Contact@ChickenJockey.dev</button>
-    <button style="margin-top: 20px;" onclick="window.open('https://discord.gg/qvtarcdK2w', '_blank')">DISCORD</button>
-  </div>
-
-
 
   <div class="footer">
     <p>&copy; 2025 Chickenjockey Studio.</p>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Post</title>
+  <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-firestore-compat.js"></script>
+
+  <!-- Meta Tags -->
+  <meta property="description" content="Chickenjockey Studio - a brand new game / website / minecraft server development studio." />
+  <meta name="keywords" content="Chickenjockey, Chicken jockey, web development, dev studio, minecraft server" />
+  <meta name="author" content="Chickenjockey Studio - By Joplay.xyz" />
+
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="ChickenJockey Studio - Post" />
+  <meta property="og:description" content="Chickenjockey Studio - a brand new game / website / minecraft server development studio." />
+  <meta property="og:image" content="/images/og-image.png" />
+  <meta property="og:url" content="https://chickenjockey.dev" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Chickenjockey Studio" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ChickenJockey Studio - Post" />
+  <meta name="twitter:description" content="Chickenjockey Studio - a brand new game / website / minecraft server development studio." />
+  <meta name="twitter:image" content="/images/twitter-image.png" />
+  <meta name="twitter:site" content="@CHJK_Studio" />
+  <meta name="twitter:creator" content="@JoplayXYZ" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon + Web-Manifest-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-logo">
+      <img src="/images/logo.png" class="logo-nav">
+      <span class="logo-text">
+        <a href="/" style="cursor: url('/cursors/pixel-black/hand.cur'), auto;">Chickenjockey</a>
+      </span>
+    </div>
+
+    <div class="nav-menu">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/#members" class="nav-link">Members</a>
+      <a href="/#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-menu" style="margin-top: 10px;">
+      <!-- Dropdown Trigger -->
+      <div class="nav-dropdown">
+        <button class="nav-link dropdown-toggle">☰ ▾</button>
+        <div class="dropdown-menu">
+          <a href="/posts/" class="dropdown-item">Posts</a>
+          <a href="/#links" class="dropdown-item">Links</a>
+        </div>
+      </div>
+      
+    </div>
+  </nav>
+
+  <div class="main-part">
+    <h1 id="postTitle">Loading...</h1>
+    <div id="postContent"></div>
+  </div>
+
+  <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyDXz5Kdf72C1Ks-xSauqd5Q1cKZTuBoy-U",
+        authDomain: "chickenjockey-studio.firebaseapp.com",
+        projectId: "chickenjockey-studio",
+        storageBucket: "chickenjockey-studio.firebasestorage.app",
+        messagingSenderId: "1012362162434",
+        appId: "1:1012362162434:web:6f9ce36d04abcc33fa521b"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    const urlParams = new URLSearchParams(window.location.search);
+    const postName = urlParams.get("post");
+    if (postName) {
+      db.collection("posts").where("title", "==", postName).get().then(snapshot => {
+        if (!snapshot.empty) {
+          const post = snapshot.docs[0].data();
+          document.getElementById("postTitle").textContent = post.title;
+          document.getElementById("postContent").innerHTML = post.content;
+        } else {
+          document.getElementById("postTitle").textContent = "Post not found";
+        }
+      }).catch(error => {
+        console.error("Error fetching post: ", error);
+      });
+    } else {
+      document.getElementById("postTitle").textContent = "No post specified";
+    }
+  </script>
+</body>
+</html>

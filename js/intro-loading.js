@@ -12,7 +12,7 @@
       justify-content: center;
       align-items: center;
       background: #0d1b2a;
-      animation: load-fadeInOut 4s ease-in-out forwards;
+      animation: load-fadeInOut 2s ease-in-out forwards;
       z-index: 999999;
     }
 
@@ -94,5 +94,5 @@
   setTimeout(() => {
     container.remove();
     style.remove();
-  }, 4000);
+  }, 2000);
 })();
