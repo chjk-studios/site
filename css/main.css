@@ -476,3 +476,13 @@ button:active {
   z-index: 2;
   opacity: 0.6;
 }
+
+
+.member-pfp {
+  border-radius: 10% 10% 10% 10%;
+  transition: all 0.2s ease-in;
+}
+
+.member-pfp:hover {
+  transform: scale(1.5, 1.5);
+}
