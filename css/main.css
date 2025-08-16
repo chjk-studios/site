@@ -7,6 +7,7 @@
   --color-green: #2ECC71;
   --color-red: #E74C3C;
   --color-blue: #3498DB;
+  --color-dark-blue: #2851a8;
   --color-orange: #F39C12;
   --color-yellow: #F1C40F;
   --color-gray: #95A5A6;
@@ -72,60 +73,51 @@ a {
 .main-part {
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 50rem;
 }
 
 .members-part {
   position: relative;
   width: 100%;
-  height: 80vh;
-  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 45vh;
+  padding-bottom: 10rem;
 }
 
 .projects-part {
   position: relative;
   width: 100%;
-  height: 80vh;
-  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 45vh;
+  padding-bottom: 10rem;
 }
 
 .links-part {
   position: relative;
   width: 100%;
-  height: 80vh;
-  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 45vh;
+  padding-bottom: 10rem;
 }
 
 .contact-part {
   position: relative;
   width: 100%;
-  height: 80vh;
-  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 45vh;
+  padding-bottom: 10rem;
 }
 
 /* MAIN */
@@ -304,7 +296,7 @@ button {
 
 button:hover {
   background: var(--gradient-primary);
-  box-shadow: 0 0 30px 5px var(--logo-bg);
+  box-shadow: 0 0 100px 0px var(--logo-bg);
   color: var(--main-bg);
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
