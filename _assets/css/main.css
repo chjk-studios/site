@@ -1,0 +1,224 @@
+/* TODO: 
+        - Remove temporary shit (Joplay) <- Who added the todo
+*/
+
+:root {
+  /* Accent Colors */
+  --accent-green: hsl(145, 63%, 49%);
+  --accent-dark-green: #1c8247;
+  --accent-blue: hsl(217, 91%, 60%);
+  --accent-dark-blue: hsl(217, 63%, 41%);
+
+  /* Extra colors: Light */
+  --blue-light: #5baeff;
+  --green-blue-light: #4fd3dc;
+  --green-light: #5fd98a;
+  --orange-light: #ff9f5e;
+  --purple-light: #b07adf;
+  --red-light: #f76c6c;
+  --yellow-light: #ffe04b;
+
+  /* Extra colors: Regular */
+  --blue: #3c83f6;
+  --green-blue: #17c3ce;
+  --green: #2ecc70;
+  --orange: #ec7429;
+  --purple: #9e3ac5;
+  --red: #ff2739;
+  --yellow: #f1c40f;
+
+  /* Extra colors: Dark */
+  --blue-dark: #2759aa;
+  --green-blue-dark: #11737c;
+  --green-dark: #1c8247;
+  --orange-dark: #cc6a25;
+  --purple-dark: #6d3793;
+  --red-dark: #a7282d;
+  --yellow-dark: #b38e00;
+
+  /* BG Colors */
+  --bg-black: #0d0d0d;
+  --bg-dark: #1a1a1a;
+  --bg-light: #333333;
+
+  /* FG Colors */
+  --fg-white: #f2f2f2;
+  --fg-damp-white: #bfbfbf;
+
+  /* TXT Colors */
+  --txt-white: var(--fg-white);
+  --txt-link: var(var(--blue-light))
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-black);
+  color: var(--fg-damp-white);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  color: var(--text-light);
+  transition: all 0.5s ease-in-out;
+  background: var(--bg-dark);
+  transition: .4s ease-in-out;
+  border-bottom: 2px solid var(--accent-green);
+}
+
+header {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-left: 1rem;
+  padding-top: 2.5rem;
+  color: var(--fg-white);
+  background: #1C8247;
+  background: linear-gradient(0deg, rgba(28, 130, 71, 1) 0%, rgba(26, 26, 26, 1) 100%);
+  transition: .4s ease-in-out;
+  border-bottom: 2px solid var(--accent-green);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+
+
+.navbarlogo {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbarmenu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  color: var(--txt-white);
+  transition: all 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: var(--txt-link);
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--green-blue);
+}
+
+.burger-menu {
+  cursor: pointer;
+  color: var(--txt-white);
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbarmenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  #open {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+
+  #close,
+  #open {
+    display: none;
+  }
+
+  .navbarmenu {
+    display: flex;
+  }
+}
+
+
+footer {
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1rem 1rem 1rem;
+  color: var(--text-light);
+  transition: all 0.5s ease-in-out;
+  bottom: 0px;
+  background: var(--bg-dark);
+  transition: .4s ease-in-out;
+  border-top: 2px solid var(--accent-green);
+  background: var(--bg-dark);
+  color: var(--fg-damp-white);
+}
+
+footer h1 {
+  align-items: center;
+  color: var(--bg-black);
+  margin: 1rem 1rem 1rem 2rem;
+  font-size: 4rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Used as classes in span tags for colored text */
+.col-green {
+  color: var(--green);
+}
+
+.card {
+  background-color: var(--bg-dark);
+  width: 15rem;
+  height: 10rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+.grid {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+hr {
+  color: var(--accent-green);
+  width: 60%;
+  height: 0px;
+  background-color: var(--accent-green);
+}
+
+p,
+h3 {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
