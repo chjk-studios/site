@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHJK Studios :: Home</title>
     <link rel="stylesheet" href="/_assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <script src="_assets/js/burgermenu.js"></script>
     <nav>
-        <div class="navbarlogo"><span class="col-green">CHJK</span></div>
+        <a href="#"><div class="navbarlogo"><span class="col-green glow-green">CHJK</span></div></a>
 
         <ul class="navbarmenu">
-            <li><a href="#">Members</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Posts</a></li>
+            <li><a href="#members">Members</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#"><i class="fa fa-external-link"></i> Posts</a></li>
 
             <div class="burger-menu" id="close">✖</div>
         </ul>
@@ -26,32 +27,79 @@
 
     <main>
         <header>
-            <h1>CHJK Studios</h1>
+            <h1><span class="col-green glow-green">CHJK</span> Studios</h1>
+            <p><i>"We develop stuff" - Cheetah</i></p>
         </header>
 
+        <hr>
+
         <div id="about">
-            <h3>Lets talk about us</h3>
+            <h3>Some stuff about us</h3>
             <p>
-                Hello, hi! 
-                We are a team of developers specializing different languages that are working together to build, maintain and host projects spanning many communities and categories! 
+                Were a team of developers experienced in a variety of langauges that make projects that are fun, engaging and useful.
             </p>
-            <p>
-                Because of our spread out language knowledge we quite often have multiple projects going at the same time, but dont worry!
-                We try to do our best in each and every one of our projects and every project on this site will be maintained forever (or at least a really long time)!
-            </p>
-            
         </div>
 
         <hr>
 
-        <div class="grid">
-            <h3>Here are we, the members</h3>
-            
+        <h3>Here are we, the members</h3>
+        <div class="grid" id="members">
+            <div class="card">
+                <div class="card-head">
+                    <div class="card-title">
+                        <h2>Joplay</h2>
+                        <p>(JoplayXYZ)</p>                        
+                    </div>
+                    <img src="/_assets/images/members/joplayxyz.png" >
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-head">
+                    <div class="card-title">
+                        <h2>Cheetah</h2>
+                        <p>(CheetahDoesStuff)</p>                        
+                    </div>
+                     <img src="/_assets/images/members/Cheetah_pfp.png" >
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-head">
+                    <div class="card-title">
+                        <h2>RiffleXReal</h2>
+                        <p>(RiffleXReal)</p>                        
+                    </div>
+                    <img src="/_assets/images/logo.png" >
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-            <h1>Joplay.xyz</h1>
+        <br>
+        <hr>
+
+        <h3>Heres our projects</h3>
+        <div class="grid" id="projects">
+            <div class="card">
+                <div class="card-head">
+                    <div class="card-title">
+                        <h2>MC Server</h2>   
+                        <p>play.chjk.xyz</p>                  
+                    </div>
+                    <img src="/_assets/images/logo.png" >
+                </div>
+                <p>Our own fully custom coded minecraft minigames server written in Skript.</p>
+            </div>
+            <div class="card">
+                <div class="card-head">
+                    <div class="card-title">
+                        <h2>Link in Bio</h2>   
+                        <p>bio.chjk.xyz</p>                  
+                    </div>
+                    <a href="https://bio.chjk.xyz"><img src="/_assets/images/logo.png" ></a>
+                </div>
+                <p>Create your own Website / Link in bio page <br>using this tool</p>
+            </div>
         </div>
+        <br>
 
     
     </main>
@@ -60,8 +108,8 @@
         <div class="footer-links">
             <p style="font-weight: bold;">&copy; 2025 CHJK Studios </p>
             <br>
-            <p><a href="#">Members</a> • 
-               <a href="#">Projects</a> • 
+            <p><a href="#members">Members</a> • 
+               <a href="#projects">Projects</a> • 
                <a href="#">Posts</a> • 
                <a href="#">About</a></p>
                <a href="#">Palette</a> • 

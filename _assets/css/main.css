@@ -4,7 +4,7 @@
 
 :root {
   /* Accent Colors */
-  --accent-green: hsl(145, 63%, 49%);
+  --accent-green: #2ecc70;
   --accent-dark-green: #1c8247;
   --accent-blue: hsl(217, 91%, 60%);
   --accent-dark-blue: hsl(217, 63%, 41%);
@@ -79,20 +79,26 @@ nav {
 
 header {
   display: flex;
-  justify-content: left;
-  align-items: left;
-  padding-left: 1rem;
-  padding-top: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
   color: var(--fg-white);
-  background: #1C8247;
-  background: linear-gradient(0deg, rgba(28, 130, 71, 1) 0%, rgba(26, 26, 26, 1) 100%);
+  background: #161616;
+  background: radial-gradient(at center, #161616 0%, #0D0D0D 60%);
   transition: .4s ease-in-out;
-  border-bottom: 2px solid var(--accent-green);
 }
 
-header h1 {
+header h1, header p {
+  text-align: center;
   margin: 0;
   font-size: 4rem;
+  padding: 0;
+}
+
+header p {
+  font-size: medium;
 }
 
 
@@ -121,7 +127,7 @@ a {
 }
 
 a:hover {
-  color: var(--green-blue);
+  color: var(--accent-green);
 }
 
 .burger-menu {
@@ -194,6 +200,14 @@ footer p {
   color: var(--green);
 }
 
+/* same, but with glow */
+.glow-green {
+  transition: .6s text-shadow;
+}
+.glow-green:hover {
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+}
+
 .card {
   background-color: var(--bg-dark);
   width: 15rem;
@@ -202,18 +216,42 @@ footer p {
   padding: 10px;
 }
 
+.card img {
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  line-height: 4px;
+}
+
+.card-title p, .card-title h2 {
+  padding: 0;
+  text-align: left;
+}
 
 .grid {
   display: grid;
-  column-gap: 20px;
-  row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, auto);
+  gap: 10px;
+  margin: 0 auto;
+  justify-items: center;
+  max-width: 600px;
 }
 
 hr {
-  color: var(--accent-green);
-  width: 60%;
+  width: 65%;
   height: 0px;
-  background-color: var(--accent-green);
+  border: none;
+  border-top: 2px solid var(--accent-green);
 }
 
 p,
