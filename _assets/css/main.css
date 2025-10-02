@@ -19,26 +19,6 @@ body {
   margin: 0;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  color: var(--fg-white);
-  background: #161616;
-  background: radial-gradient(at center, #161616 0%, #0D0D0D 60%);
-  transition: .4s ease-in-out;
-}
-
-header h1, header p {
-  text-align: center;
-  margin: 0;
-  font-size: 4rem;
-  padding: 0;
-}
-
 #platforms {
   display: flex;
   justify-content: center;
