@@ -42,3 +42,13 @@ header h1, header p {
   font-size: 4rem;
   padding: 0;
 }
+
+#platforms {
+  display: flex;
+  justify-content: center;
+}
+
+#platforms svg {
+  width: 50px;
+  padding: 10px;
+}

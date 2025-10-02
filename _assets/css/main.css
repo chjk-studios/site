@@ -18,13 +18,3 @@ body {
   height: 100%;
   margin: 0;
 }
-
-#platforms {
-  display: flex;
-  justify-content: center;
-}
-
-#platforms svg {
-  width: 50px;
-  padding: 10px;
-}
