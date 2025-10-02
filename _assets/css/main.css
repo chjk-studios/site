@@ -56,12 +56,6 @@ a:hover {
   color: var(--accent-green);
 }
 
-.burger-menu {
-  cursor: pointer;
-  color: var(--txt-white);
-  transition: all 0.5s ease-in-out;
-}
-
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
