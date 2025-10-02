@@ -270,6 +270,7 @@ h3 {
   justify-content: center;
 }
 
-#platforms img {
+#platforms svg {
   width: 50px;
+  padding: 10px;
 }
