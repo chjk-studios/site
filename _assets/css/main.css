@@ -54,19 +54,6 @@ header h1, header p {
   text-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
 }
 
-hr {
-  width: 65%;
-  height: 0px;
-  border: none;
-  border-top: 2px solid var(--accent-green);
-}
-
-p,
-h3 {
-  text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
-}
 
 #platforms {
   display: flex;

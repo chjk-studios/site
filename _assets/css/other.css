@@ -8,3 +8,17 @@ a {
 a:hover {
   color: var(--accent-green);
 }
+
+hr {
+  width: 65%;
+  height: 0px;
+  border: none;
+  border-top: 2px solid var(--accent-green);
+}
+
+p,
+h3 {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
