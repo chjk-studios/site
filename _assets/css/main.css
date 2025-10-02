@@ -2,14 +2,10 @@
         - Remove temporary shit (Joplay) <- Who added the todo
 */
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
 }
 
 body {
@@ -19,6 +15,8 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: var(--bg-black);
   color: var(--fg-damp-white);
+  height: 100%;
+  margin: 0;
 }
 
 header {
