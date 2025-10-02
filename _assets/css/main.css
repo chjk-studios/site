@@ -56,6 +56,10 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -259,4 +263,13 @@ h3 {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+#platforms {
+  display: flex;
+  justify-content: center;
+}
+
+#platforms img {
+  width: 50px;
 }
