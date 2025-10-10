@@ -1,6 +1,6 @@
 (function consoleArt() {
     const year = new Date().getFullYear();
-    const company = "CHJK Studio";
+    const company = "CHJK Studios";
     const ascii = `
  CCCCC  HH   HH 
 CC    C HH   HH 

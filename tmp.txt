@@ -1,0 +1,9 @@
+            <p>
+                Hello, hi! 
+                We are a team of developers specializing different languages that are working together to build, maintain and host projects spanning many communities and categories! 
+            </p>
+
+            <p>
+                Because of our spread out language knowledge we quite often have multiple projects going at the same time, but dont worry!
+                We try to do our best in each and every one of our projects and every project on this site will be maintained forever (or at least a really long time)!
+            </p>

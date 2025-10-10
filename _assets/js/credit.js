@@ -69,7 +69,7 @@
 
     const text = document.createElement('div');
     text.className = 'loading-text';
-    text.textContent = 'Created By Joplay.xyz';
+    text.textContent = 'Created By Joplay.xyz and Cheetah.is-a.dev';
 
     container.appendChild(text);
     document.body.appendChild(container);

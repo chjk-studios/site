@@ -1,0 +1,55 @@
+a {
+  text-decoration: none;
+  color: var(--txt-link);
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--accent-green);
+}
+
+hr {
+  width: 65%;
+  height: 0px;
+  border: none;
+  border-top: 2px solid var(--accent-green);
+}
+
+p,
+h3 {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: var(--fg-white);
+  background: #161616;
+  background: radial-gradient(at center, #161616 0%, #0D0D0D 60%);
+  transition: .4s ease-in-out;
+}
+
+header h1, header p {
+  text-align: center;
+  margin: 0;
+  font-size: 4rem;
+  padding: 0;
+}
+
+#platforms, #contact {
+  display: flex;
+  justify-content: center;
+}
+
+#platforms svg, 
+#contact svg {
+  width: 50px;
+  padding: 10px;
+}
