@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHJK Studios :: Home</title>
+
+    <link rel="stylesheet" href="/_assets/css/main.css" />
+    <link rel="stylesheet" href="/_assets/css/colors.css">
+    <link rel="stylesheet" href="/_assets/css/other.css">
+    <link rel="stylesheet" href="/_assets/css/navbar.css">
+    <link rel="stylesheet" href="/_assets/css/footer.css">
+    <link rel="stylesheet" href="/_assets/css/cards.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <a href="/"><div class="navbarlogo"><span class="col-green glow-green">CHJK</span></div></a>
+
+        <ul class="navbarmenu">
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <header>
+            <h2 style="font-size: 3rem; margin-bottom: 0;">Bug reports</h2>
+            <h3>and more...</h3>
+            <p>Found a bug? Report it here!</p>
+        </header>
+
+        <hr>
+        <br>
+
+        <form id="bugForm">
+        <input type="text" id="reporter" name="reporter" placeholder="Your username (optional)"><br>
+        <select id="title" name="title" required>
+            <option value="" disabled selected>Select a bug type</option>
+            <option value="website">Website</option>
+            <option value="minecraft">Minecraft</option>
+            <option value="other">Other</option>
+        </select><br>
+        <input type="text" id="title" name="title" placeholder="Title (optional)"><br>
+        <textarea id="description" name="description" placeholder="Describe the bug..." required></textarea><br>
+        <button type="submit">Submit</button>
+        </form>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <p style="font-weight: bold;">&copy; 2025 CHJK Studios </p>
+            <br>
+            <p><a href="/#members">Members</a> • 
+               <a href="/#projects">Projects</a> • 
+               <a href="#">Posts</a> • 
+               <a href="#">About</a>
+            </p>
+            <p>
+               <a href="https://utils.chjk.xyz">Utils</a> • 
+               <a href="#">Assets</a>
+            </p>
+
+            <p>Contains <a href="https://icones.js.org/collection/grommet-icons">Grommet Icons</a> under the <a href="https://www.apache.org/licenses/LICENSE-2.0">APACHE License 2.0</a> through <a href="https://icones.js.org/">Icônes</a></p>
+
+        </div>
+    </footer>
+    <script>
+    document.getElementById("bugForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const reporter = document.getElementById("reporter").value;
+        const description = document.getElementById("description").value;
+        const title = document.getElementById("title").value;
+
+        const res = await fetch("https://prod.bugapi.chjk.xyz/bugreport", {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json"
+            //"x-api-key": "supersecretkey123"
+            },
+            body: JSON.stringify({ reporter, description, title })
+        });
+
+        const data = await res.json();
+        alert(data.success ? "Bug report sent!" : "Failed: " + data.error);
+    });
+    </script>
+</body>
+</html>
