@@ -34,6 +34,8 @@ header {
   background: #161616;
   background: radial-gradient(at center, #161616 0%, #0D0D0D 60%);
   transition: .4s ease-in-out;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 header h1, header p {
