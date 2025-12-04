@@ -1,0 +1,52 @@
+body {
+    background-color: var(--bg);
+    font-family: var(--font);
+    color: var(--txt);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #202020;
+}
+
+nav img {
+    width: 4rem;
+    height: 4rem;
+}
+
+header {
+    margin-top: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+section {
+    margin-top: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+a {
+    color: var(--txt-link);
+    text-decoration: none;
+    border-bottom: 1px solid var(--txt-link);
+}
