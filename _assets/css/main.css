@@ -1,3 +1,7 @@
+* {
+    scrollbar-color: var(--accent) var(--bg-2);
+}
+
 body {
     background-color: var(--bg);
     font-family: var(--font);
