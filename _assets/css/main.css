@@ -2,6 +2,12 @@
     scrollbar-color: var(--accent) var(--bg-2);
 }
 
+html, body {
+    overscroll-behavior: none;
+    scroll-margin-top: 100px;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg);
     font-family: var(--font);
@@ -28,6 +34,8 @@ header {
     flex-direction: column;
     align-content: center;
     text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 main {
@@ -45,12 +53,49 @@ section {
     flex-direction: column;
     align-content: center;
     text-align: center;
+    scroll-margin-top: 20vh;
 }
 
-
-
-a {
+nav a {
     color: var(--txt-link);
     text-decoration: none;
     border-bottom: 1px solid var(--txt-link);
+}
+
+a {
+    color: var(--txt-link);
+}
+
+.card {
+    background-color: var(--bg-2);
+    width: 15rem;
+    height: 10rem;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.card .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .card-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card .card-head img {
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+}
+
+.card .card-title p, .card-title h2, .card-title h3 {
+  padding: 0;
+  margin: 0;
 }
