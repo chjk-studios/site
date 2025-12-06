@@ -7,7 +7,7 @@ body.introplaying {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   backdrop-filter: blur(8px);
-  background: linear-gradient(0deg, var(--bg-intro), var(--bg-intro-2)) center/cover no-repeat;
+  background: var(--bg) center/cover no-repeat;
   display: flex; justify-content: center; align-items: center;
   z-index: 999999;
   opacity: 1;
@@ -32,4 +32,32 @@ body.introplaying {
 #intro-overlay l-zoomies {
     width: 50vw;
     max-width: 150px;
+}
+
+.background {
+    animation: background-anim 1.5s ease-in-out;
+}
+
+main, footer, nav, header {
+    animation: mainfadein 2.5s ease-in-out
+}
+
+@keyframes mainfadein {
+    0%, 75% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes background-anim {
+    0% {
+        filter: blur(100px);
+    }
+    100% {
+        filter: blur(0px);
+    }
 }

@@ -32,6 +32,12 @@ nav {
     border-bottom: 2px solid #202020;
 }
 
+nav a {
+    color: var(--txt-link);
+    text-decoration: none;
+    border-bottom: 1px solid var(--txt-link);
+}
+
 nav img {
     width: 4rem;
     height: 4rem;
@@ -80,10 +86,25 @@ section {
     scroll-margin-top: 20vh;
 }
 
-nav a {
-    color: var(--txt-link);
-    text-decoration: none;
-    border-bottom: 1px solid var(--txt-link);
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 2px solid #202020;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: top;
+    text-align: center;
+    background-image: linear-gradient(to right, #0a0a0a98, #0a0a0afb), url("/_assets/img/logo-transparent-background.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 155px;
+    height: 10rem;
+    padding-top: 1rem;
+}
+
+footer h1 {
+    margin-top:0;
 }
 
 a {
@@ -93,7 +114,6 @@ a {
 .card {
     background-color: var(--bg-2);
     width: 15rem;
-    height: 10rem;
     border-radius: 10px;
     padding: 10px;
     margin-top: 0.25rem;
