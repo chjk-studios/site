@@ -35,11 +35,11 @@ body.introplaying {
 }
 
 .background {
-    animation: background-anim 1.5s ease-in-out;
+    animation: background-anim 1s ease-in-out 0.75s;
 }
 
 main, footer, nav, header {
-    animation: mainfadein 2.5s ease-in-out
+    animation: mainfadein 2.25s ease-in-out;
 }
 
 @keyframes mainfadein {

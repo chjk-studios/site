@@ -19,6 +19,13 @@
         "link": "https://felixstro.vercel.app",
         "profilepicture": "/_assets/img/members/felixstro.png",
         "bio": "<a href='https://felixstro.vercel.app'>Felixstro.vercel.app</a> \nfelixstro@chjk.xyz"
+    },
+    {
+        "name": "RiffleXReal",
+        "role": "Developer",
+        "link": "https://rifflexreal-games.vercel.app/",
+        "profilepicture": "https://rifflexreal-games.vercel.app/IMG_7530.jpeg",
+        "bio": "<a href='https://felixstro.vercel.app'>Felixstro.vercel.app</a> \nfelixstro@chjk.xyz"
     }
     
 ]
