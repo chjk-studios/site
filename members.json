@@ -1,0 +1,31 @@
+[
+    {
+        "name": "JoplayXYZdev",
+        "role": "Founder",
+        "link": "https://joplay.xyz",
+        "profilepicture": "https://minotar.net/helm/joplayxyzdev/100.png",
+        "bio": "<a href='https://joplay.xyz'>Joplay.xyz</a> \njoplayxyz@chjk.xyz"
+    },
+    {
+        "name": "Cheetah",
+        "role": "Head Developer",
+        "link": "https://cheetah.is-a.dev",
+        "profilepicture": "/_assets/img/members/cheetahdoesstuff.png",
+        "bio": "<a href='https://cheetah.is-a.dev'>Cheetah.is-a.dev</a> \ncheetah@chjk.xyz"
+    },
+    {
+        "name": "FelixStro",
+        "role": "Developer",
+        "link": "https://felixstro.vercel.app",
+        "profilepicture": "/_assets/img/members/felixstro.png",
+        "bio": "<a href='https://felixstro.vercel.app'>Felixstro.vercel.app</a> \nfelixstro@chjk.xyz"
+    },
+    {
+        "name": "RiffleXReal",
+        "role": "Developer",
+        "link": "https://rifflexreal-games.vercel.app/",
+        "profilepicture": "https://rifflexreal-games.vercel.app/IMG_7530.jpeg",
+        "bio": "<a href='https://felixstro.vercel.app'>Felixstro.vercel.app</a> \nfelixstro@chjk.xyz"
+    }
+    
+]

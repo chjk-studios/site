@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Website Maker",
+        "subtitle": "bio.chjk.xyz",
+        "site": "https://bio.chjk.xyz",
+        "imgsrc": "/_assets/img/logo-spaced.png",
+        "desc": "Create your own Website using Markdown"
+    },
+    {
+        "title": "Minecraft Server",
+        "subtitle": "play.chjk.xyz",
+        "site": "",
+        "imgsrc": "/_assets/img/logo-spaced.png",
+        "desc": "A unique minigames network"
+    },
+    {
+        "title": "Skit",
+        "subtitle": "skit.chjk.xyz",
+        "site": "https://skit.chjk.xyz/",
+        "imgsrc": "https://skit.chjk.xyz/_assets/images/Skit_logo_main.svg",
+        "desc": "Database for Minecraft Skript stuff"
+    },
+    {
+        "title": "Server Designer",
+        "subtitle": "utils.chjk.xyz",
+        "site": "https://utils.chjk.xyz/",
+        "imgsrc": "/_assets/img/logo-spaced.png",
+        "desc": "Tools for Minecraft servers"
+    }
+]

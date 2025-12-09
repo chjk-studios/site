@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <title>Create Post (Auth Required)</title>
-  <link rel="stylesheet" href="/posts/styles.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="stylesheet" href="/__archive/posts/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/__archive/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/__archive/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/__archive/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/__archive/favicon/site.webmanifest">
   <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/11.9.0/firebase-auth-compat.js"></script>
@@ -15,15 +15,15 @@
 <body>
   <nav class="nav">
     <div class="nav-logo">
-      <img src="/images/logo.png" class="logo-nav">
+      <img src="/__archive/images/logo.png" class="logo-nav">
       <span class="logo-text"><a href="#" style="cursor: url('/cursors/pixel-black/hand.cur'), auto;">Chickenjockey</a></span>
     </div>
     <div class="nav-menu">
-      <a href="/" class="nav-link">Home</a>
+      <a href="/__archive/" class="nav-link">Home</a>
       <a href="#projects" class="nav-link">Projects</a>
       <a href="#links" class="nav-link">Links</a>
       <a href="#contact" class="nav-link">Contact</a>
-      <a href="/posts" class="nav-link">Posts</a>
+      <a href="/__archive/posts" class="nav-link">Posts</a>
     </div>
   </nav>
   <div class="main-part">
@@ -56,14 +56,9 @@
   </div>
 
   <script>
-
+    /*
     const firebaseConfig = {
-      apiKey: "AIzaSyDXz5Kdf72C1Ks-xSauqd5Q1cKZTuBoy-U",
-      authDomain: "chickenjockey-studio.firebaseapp.com",
-      projectId: "chickenjockey-studio",
-      storageBucket: "chickenjockey-studio.firebasestorage.app",
-      messagingSenderId: "1012362162434",
-      appId: "1:1012362162434:web:6f9ce36d04abcc33fa521b"
+
     };
 
     const firebaseErrorMessages = {
@@ -156,7 +151,7 @@
         console.error("Error adding post: ", error);
         statusDiv.textContent = "Error creating post.";
       });
-    });
+    });*/
   </script>
 </body>
 </html>

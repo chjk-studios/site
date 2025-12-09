@@ -1,20 +1,160 @@
-/* TODO: 
-        - Remove temporary shit (Joplay) <- Who added the todo
-*/
+* {
+    scrollbar-color: var(--accent) var(--bg-2);
+}
 
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-  margin: 0;
+html, body {
+    overscroll-behavior: none;
+    scroll-margin-top: 100px;
+    scroll-behavior: smooth;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+    background-color: var(--bg);
+    font-family: var(--font);
+    color: var(--txt);
+    scroll-snap-type: y mandatory;
+}
+
+.nav-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    background-color: var(--bg-alt);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #202020;
+    z-index: 10000;
+}
+
+nav a {
+    color: var(--txt-link);
+    text-decoration: none;
+    border-bottom: 1px solid var(--txt-link);
+}
+
+nav img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.background {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(to bottom, #0a0a0ab9, #0a0a0a),
+        url("/_assets/img/logo-transparent-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+    z-index: -10000;
+}
+
+header {
+    margin-top: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    scroll-snap-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+section {
+    margin-top: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    scroll-margin-top: 20vh;
+    scroll-snap-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 2px solid #202020;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: top;
+    text-align: center;
+    background-image: linear-gradient(to right, #0a0a0a98, #0a0a0afb), url("/_assets/img/logo-transparent-background.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 155px;
+    height: 10rem;
+    padding-top: 1rem;
+    scroll-snap-align: center;
+}
+
+footer h1 {
+    margin-top:0;
+}
+
+a {
+    color: var(--txt-link);
+}
+
+.card {
+    background-color: var(--bg-2);
+    width: 15rem;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.card .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .card-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card .card-head img {
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+}
+
+.card .card-title p, .card-title h2, .card-title h3 {
+  padding: 0;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: var(--bg-black);
-  color: var(--fg-damp-white);
-  height: 100%;
-  margin: 0;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
