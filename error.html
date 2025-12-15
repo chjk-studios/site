@@ -28,29 +28,25 @@
     <script src="/_assets/js/logoAscii.js"></script>
     <script>
         const errorMessages = [
-            { code: 400, description: "The request was not valid." },
-            { code: 401, description: "Authentication is required to continue." },
-            { code: 403, description: "You don't have permission to access this. get out..." },
-            { code: 404, description: "The page you are looking for wasn't found..." },
-            { code: 408, description: "The request timed out ._." },
-            { code: 429, description: "Too many requests were made in a short time." },
-            { code: 500, description: "An internal server error occurred....." },
-            { code: 502, description: "An invalid response was received from another service. (i don't know what this error means tbh)" },
-            { code: 503, description: "The service is currently unavailable." },
-            { code: 504, description: "The server took way too long to respond." }
+            { code: "400", description: "The request was not valid." },
+            { code: "401", description: "Authentication is required to continue." },
+            { code: "403", description: "You don't have permission to access this. get out..." },
+            { code: "404", description: "The page you are looking for wasn't found..." },
+            { code: "408", description: "The request timed out ._." },
+            { code: "429", description: "Too many requests were made in a short time." },
+            { code: "500", description: "An internal server error occurred....." },
+            { code: "502", description: "An invalid response was received from another service. (i don't know what this error means tbh)" },
+            { code: "503", description: "The service is currently unavailable." },
+            { code: "504", description: "The server took way too long to respond." }
         ];
         const params = new URLSearchParams(window.location.search);
         const errorType = params.get('type');
 
         const errorMessage = errorMessages.find(e => e.code === errorType);
 
-        const descriptionMessage = errorMessage
-            ? error.description
-            : "Invalid Error Type";
+        const descriptionMessage = errorMessage ? errorMessage.description : "Invalid Error Type";
 
-        const titleMessage = errorMessage
-            ? error.code
-            : "Invalid Error Type";
+        const titleMessage = errorMessage ? errorMessage.code : "Invalid Error Type";
 
         document.getElementById('title').textContent = titleMessage;
         document.getElementById('description').textContent = descriptionMessage;
