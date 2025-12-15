@@ -126,7 +126,7 @@ function effect5() {
         const i = Math.floor(Math.random() * chars.length);
         if (chars[i] !== "\n") chars[i] = " ";
         pre.textContent = chars.join("");
-    }, 2);
+    }, 1);
 }
 
 setInterval(() => {
