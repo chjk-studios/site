@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error | chjk</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="404 | chjk">
+    <meta property="og:url" content="https://chjk.xyz">
+    <meta property="og:image" content="https://chjk.xyz/_assets/img/logo-spaced-inverted.png">
+    <meta property="og:description" content="Hi! We are CHJK Studios, a small team of developers creating websites, minecraft servers and more">
+
+    <link rel="stylesheet" href="/_assets/css/variables.css">
+    <link rel="stylesheet" href="/_assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/zoomies.js"></script>
+</head>
+<body>
+    <header style="margin-top: 10rem; margin-bottom: 10rem;">
+        <div class="asciiart" id="ascii" style="white-space: pre; font-family: monospace; font-size: 0.5rem; color: var(--accent);"></div>
+        <p style="font-size: 0.8rem;" id="currentAnimation"></p>
+        <h1 id="title" style="font-size: 5rem; color: var(--accent); margin-top: 5rem; margin-bottom: 0rem;">.</h1>
+        <p id="description" class="description">.</p>
+        <a href="/">Return...</a>
+    </header>
+    <script src="/_assets/js/logoAscii.js"></script>
+    <script>
+        const errorMessages = [
+            { code: 400, description: "The request was not valid." },
+            { code: 401, description: "Authentication is required to continue." },
+            { code: 403, description: "You don't have permission to access this. get out..." },
+            { code: 404, description: "The page you are looking for wasn't found..." },
+            { code: 408, description: "The request timed out ._." },
+            { code: 429, description: "Too many requests were made in a short time." },
+            { code: 500, description: "An internal server error occurred....." },
+            { code: 502, description: "An invalid response was received from another service. (i don't know what this error means tbh)" },
+            { code: 503, description: "The service is currently unavailable." },
+            { code: 504, description: "The server took way too long to respond." }
+        ];
+        const params = new URLSearchParams(window.location.search);
+        const errorType = params.get('type');
+
+        const errorMessage = errorMessages.find(e => e.code === errorType);
+
+        const descriptionMessage = errorMessage
+            ? error.description
+            : "Invalid Error Type";
+
+        const titleMessage = errorMessage
+            ? error.code
+            : "Invalid Error Type";
+
+        document.getElementById('title').textContent = titleMessage;
+        document.getElementById('description').textContent = descriptionMessage;
+    </script>
+</body>
+</html>

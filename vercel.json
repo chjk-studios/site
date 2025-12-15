@@ -1,8 +1,20 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/404", "destination": "/404.html" },
-    { "source": "/403", "destination": "/404.html" },
+    { "source": "/error*", "destination": "/error.html*" },
     { "source": "/discord", "destination": "/discord.html" }
-  ]
+  ],
+  "customErrorPage": {
+    "400": "/error?type=400",
+    "401": "/error?type=401",
+    "403": "/error?type=403",
+    "404": "/error?type=404",
+    "408": "/error?type=408",
+    "429": "/error?type=429",
+    "500": "/error?type=500",
+    "502": "/error?type=502",
+    "503": "/error?type=503",
+    "504": "/error?type=504"
+  }
+
 }
