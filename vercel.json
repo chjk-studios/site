@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/error*", "destination": "/error.html*" },
+    { "source": "/error", "destination": "/error.html" },
     { "source": "/discord", "destination": "/discord.html" }
   ],
   "customErrorPage": {
