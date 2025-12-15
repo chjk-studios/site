@@ -4,6 +4,8 @@
     { "source": "/error", "destination": "/error.html" },
     { "source": "/discord", "destination": "/discord.html" },
     { "source": "/404.html", "destination": "/error.html?type=404" },
-    { "source": "/500.html", "destination": "/error.html?type=500" }
+    { "source": "/500.html", "destination": "/error.html?type=500" },
+    { "source": "/404", "destination": "/error.html?type=404" },
+    { "source": "/500", "destination": "/error.html?type=500" }
   ]
 }
